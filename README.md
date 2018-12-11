@@ -23,7 +23,7 @@ is up almost immediately Kubernetes will now recognize your app as alive and wil
 
 #### 3. DynamicEndpoint
 
-A DynamicSupervisor responsible for starting the rest of the normal endpoints.
+A DynamicSupervisor responsible for starting the rest of the normal endpoints on request.
 
 #### 4. MigrateWorker
 
@@ -43,4 +43,5 @@ Once the readiness endpoint is up Kubernetes will start directing traffic to our
 * Start Phoenix endpoint with `mix phx.server` (or `iex -S mix phx.server`)
 
 Liveness endpoint: `localhost:4001/_liveness`
+
 Readiness endpoint (up after migrations): `localhost:4000/_readiness`
