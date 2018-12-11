@@ -21,6 +21,8 @@ This is the DB connection etc, same as in a default phoenix setup.
 Exposed on port 4001, and uses the LivenessRouter. This is what you should use in your kubernetes config for the livenessProbe. Since this endpoint
 is up almost immediately Kubernetes will now recognize your app as alive and will not restart it. However we are not ready to accept traffic yet.
 
+An alternative to this endpoint could be to use [disillery](https://github.com/bitwalker/distillery)'s [`ping`](https://github.com/bitwalker/distillery/blob/aef8f2ee9db0699ab04ce1b2a926f14063c0e506/priv/libexec/commands/ping.sh) command as the liveness check (Thanks [soundmonster](https://github.com/soundmonster)).
+
 #### 3. DynamicEndpoint
 
 A DynamicSupervisor responsible for starting the rest of the normal endpoints on request.
