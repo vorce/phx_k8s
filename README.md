@@ -1,6 +1,6 @@
 # Migrator
 
-A sample phoenix application that conforms to Kubernetes liveness and readiness semantics.
+A sample phoenix application that conforms to Kubernetes [liveness and readiness semantics](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/).
 
 **Note:** This is still an experiment, it has not been used in a production service yet.
 
